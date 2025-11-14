@@ -1,5 +1,6 @@
 import List from '../../components/list/List'
 import './profilePage.scss'
+import Chat from "../../components/chat/Chat.jsx";
 
 export default function ProfilePage(){
 	return(
@@ -12,8 +13,8 @@ export default function ProfilePage(){
 					</div>
 					<div className="info">
 						<span>Avatar: <img
-						  src="https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-						  alt=""
+                            src="https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                            alt=""
 						/></span>
 						<span>
 							Username: <b>John Doe </b>
@@ -34,7 +35,9 @@ export default function ProfilePage(){
 				</div>
 			</div>
 			<div className="chatContainer">
-				<div className="wrapper"></div>
+				<div className="wrapper">
+                    <Chat/>
+                </div>
 			</div>
 		</div>
 	)
